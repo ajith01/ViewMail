@@ -1,2 +1,4 @@
-package Client;public class EmailManager {
+package Client;
+
+public class EmailManager {
 }

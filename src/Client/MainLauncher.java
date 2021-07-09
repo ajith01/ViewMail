@@ -1,3 +1,6 @@
+package Client;
+
+import Client.GUI.GUIManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,11 +16,14 @@ public class MainLauncher extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/LoginWindows.fxml"));
+        GUIManager guiManager = new GUIManager(new EmailManager());
+        guiManager.showLoginWindow();
 
-        Scene scene = new Scene(parent,465,380);
-        primaryStage.setScene(scene);
-        primaryStage.show();
+//        Parent parent = FXMLLoader.load(getClass().getResource("GUI/MainWindow.fxml"));
+//
+//        Scene scene = new Scene(parent,465,380);
+//        primaryStage.setScene(scene);
+//        primaryStage.show();
 
 
     }
