@@ -31,10 +31,13 @@ public class LoginWindowController extends Controller {
         //doesnt have abuilt in method to get the stage
         Stage stage = (Stage) passwordField.getScene().getWindow();
         guiManager.closeStage(stage);
+        guiManager.updateStyles();
+
 
     }
     public LoginWindowController(EmailManager emailManager, GUIManager guiManager, String fxmlUrl) {
         super(emailManager, guiManager, fxmlUrl);
+
     }
 
 }

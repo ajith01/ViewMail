@@ -23,7 +23,7 @@ public class GUIManager {
         activeStages = new ArrayList<Stage>();
     }
 
-    private Colours theme = Colours.Default;
+    private Colours theme = Colours.Dark;
     private FontSize fontSize = FontSize.Medium;
 
     public Colours getTheme() {
@@ -91,6 +91,9 @@ public class GUIManager {
     public void updateStyles() {
         for (Stage stage:activeStages){
             Scene scene = stage.getScene();
+            scene.getStylesheets().clear();
+            scene.getStylesheets().add(getClass().getResource(Colours.getCSSPath(theme)).toExternalForm());
+            scene.getStylesheets().add(getClass().getResource(FontSize.getCSSPath(fontSize)).toExternalForm());
 
         }
     }

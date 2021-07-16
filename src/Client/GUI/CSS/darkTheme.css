@@ -1,0 +1,56 @@
+*{
+    -fx-background-color: #4b6082;
+    -fx-text-fill: white;
+}
+
+.big{
+   -fx-text-fill: white;
+}
+
+Button, Label, ChoiceBox, Slide {
+    -fx-text-fill: white;
+
+}
+
+Button{
+-fx-background-color: #4a72b5;
+-fx-border-style: None;
+
+}
+
+TextField, PasswordField{
+-fx-background-color: #627ba6;
+-fx-fill: #627ba6;
+-fx-border-style: None;
+
+}
+Button:hover {
+-fx-background-color: #627ba6;
+
+}
+
+ChoiceBox >*{
+-fx-background-color: #627ba6;
+-fx-border-style: None;
+
+
+}
+
+Slider.axis{
+-fx-tick-label-fill: white;
+}
+
+
+Slider .track{
+-fx-tick-label-fill: white;
+-fx-background-color: #627ba6;
+
+}
+Slider .track:hover{
+-fx-tick-label-fill: white;
+-fx-background-color: #627ba6;
+}
+
+Slider .thumb{
+-fx-background-color: #627ba6;
+}

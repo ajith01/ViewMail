@@ -18,6 +18,7 @@ public class MainLauncher extends Application {
 
         GUIManager guiManager = new GUIManager(new EmailManager());
         guiManager.showLoginWindow();
+        guiManager.updateStyles();
 
 //        Parent parent = FXMLLoader.load(getClass().getResource("GUI/MainWindow.fxml"));
 //

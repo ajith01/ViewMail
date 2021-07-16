@@ -30,6 +30,7 @@ public class OptionsWindowController extends Controller implements Initializable
 
     public OptionsWindowController(EmailManager emailManager, GUIManager guiManager, String fxmlUrl) {
         super(emailManager, guiManager, fxmlUrl);
+
     }
 
     @FXML
